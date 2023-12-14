@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrinkMachineLibrary", "DrinkMachine\DrinkMachineLibrary.csproj", "{6604FA16-6282-4ADF-B951-F39E1459D83E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{20391294-9466-436C-B7C2-1F8F828F6276}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6604FA16-6282-4ADF-B951-F39E1459D83E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6604FA16-6282-4ADF-B951-F39E1459D83E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6604FA16-6282-4ADF-B951-F39E1459D83E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6604FA16-6282-4ADF-B951-F39E1459D83E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20391294-9466-436C-B7C2-1F8F828F6276}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20391294-9466-436C-B7C2-1F8F828F6276}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20391294-9466-436C-B7C2-1F8F828F6276}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20391294-9466-436C-B7C2-1F8F828F6276}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2EC9E1A9-9626-4D32-B241-6DC11257E705}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,6 @@
+D:\DrinkMachine\DrinkMachine\bin\Debug\DrinkMachine.dll
+D:\DrinkMachine\DrinkMachine\bin\Debug\DrinkMachine.pdb
+D:\DrinkMachine\DrinkMachine\obj\Debug\DrinkMachineLibrary.csproj.AssemblyReference.cache
+D:\DrinkMachine\DrinkMachine\obj\Debug\DrinkMachineLibrary.csproj.CoreCompileInputs.cache
+D:\DrinkMachine\DrinkMachine\obj\Debug\DrinkMachine.dll
+D:\DrinkMachine\DrinkMachine\obj\Debug\DrinkMachine.pdb
