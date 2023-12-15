@@ -4,3 +4,9 @@ D:\DrinkMachine\DrinkMachine\obj\Debug\DrinkMachineLibrary.csproj.AssemblyRefere
 D:\DrinkMachine\DrinkMachine\obj\Debug\DrinkMachineLibrary.csproj.CoreCompileInputs.cache
 D:\DrinkMachine\DrinkMachine\obj\Debug\DrinkMachine.dll
 D:\DrinkMachine\DrinkMachine\obj\Debug\DrinkMachine.pdb
+D:\DrinkMachine\DrinkMachine1\DrinkMachine\bin\Debug\DrinkMachine.dll
+D:\DrinkMachine\DrinkMachine1\DrinkMachine\bin\Debug\DrinkMachine.pdb
+D:\DrinkMachine\DrinkMachine1\DrinkMachine\obj\Debug\DrinkMachineLibrary.csproj.AssemblyReference.cache
+D:\DrinkMachine\DrinkMachine1\DrinkMachine\obj\Debug\DrinkMachineLibrary.csproj.CoreCompileInputs.cache
+D:\DrinkMachine\DrinkMachine1\DrinkMachine\obj\Debug\DrinkMachine.dll
+D:\DrinkMachine\DrinkMachine1\DrinkMachine\obj\Debug\DrinkMachine.pdb

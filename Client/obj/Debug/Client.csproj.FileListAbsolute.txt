@@ -8,3 +8,13 @@ D:\DrinkMachine\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
 D:\DrinkMachine\Client\obj\Debug\Client.csproj.CopyComplete
 D:\DrinkMachine\Client\obj\Debug\Client.exe
 D:\DrinkMachine\Client\obj\Debug\Client.pdb
+D:\DrinkMachine\DrinkMachine1\Client\bin\Debug\Client.exe.config
+D:\DrinkMachine\DrinkMachine1\Client\bin\Debug\Client.exe
+D:\DrinkMachine\DrinkMachine1\Client\bin\Debug\Client.pdb
+D:\DrinkMachine\DrinkMachine1\Client\bin\Debug\DrinkMachine.dll
+D:\DrinkMachine\DrinkMachine1\Client\bin\Debug\DrinkMachine.pdb
+D:\DrinkMachine\DrinkMachine1\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+D:\DrinkMachine\DrinkMachine1\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+D:\DrinkMachine\DrinkMachine1\Client\obj\Debug\Client.csproj.CopyComplete
+D:\DrinkMachine\DrinkMachine1\Client\obj\Debug\Client.exe
+D:\DrinkMachine\DrinkMachine1\Client\obj\Debug\Client.pdb

@@ -4,37 +4,47 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace DrinkMachineLibrary
 {
     public class DrinkMachine
     {
-        Cleanser cleanser;
-        Cutter cutter;
-        Blender blender;
-        Presser presser;
-        Filter filter;
+        private Cleanser cleanser;
+        private Cutter cutter;
+        private Blender blender;
+        private Presser presser;
+        private Filter filter ;
 
         private int Type { get; set; }
-        public DrinkMachine() { }
-        public DrinkMachine(Cleanser cleanser, Cutter cutter, Blender blender, Presser presser, Filter filter)
-        {
-            this.cleanser = cleanser;
-            this.cutter = cutter;
-            this.blender = blender;
-            this.presser = presser;
-            this.filter = filter;
+        public DrinkMachine() {
+            cleanser = new Cleanser();
+            cutter = new Cutter();
+            blender = new Blender();
+            presser = new Presser();
+            filter = new Filter();
             cleanser.On();
             cutter.On();
             blender.On();
             presser.On();
             filter.On();
-
-
         }
+        //public DrinkMachine(Cleanser cleanser, Cutter cutter, Blender blender, Presser presser, Filter filter)
+        //{
+        //    this.cleanser = cleanser;
+        //    this.cutter = cutter;
+        //    this.blender = blender;
+        //    this.presser = presser;
+        //    this.filter = filter;
+        //    cleanser = new Cleanser();
+        //    cutter = new Cutter();
+        //    blender = new Blender();
+        //    presser = new Presser();
+        //    filter = new Filter();
+        //}
         public void MakeOrangeJuice()
         {
             Console.WriteLine("Start Press Orange Juice");
-            cleanser.Clean(true, 200);
+            cleanser.Clean(true,200);
             cutter.Cut(1);
             presser.Press(1);
             filter.Filt(1);
@@ -53,14 +63,19 @@ namespace DrinkMachineLibrary
         }
         public void MakeWatermelonSmoothie1()
         {
+
             Console.WriteLine("Start Make Watermelon Smoothie");
-            cleanser.Clean();
+            cleanser.On();
+            cleanser.Clean(true, 200);
+            cleanser.Off();
+            cutter.On();
             cutter.Cut(2);
+            cutter.Off();
             blender.Puree(2);
             filter.Filt(2);
             Console.WriteLine("Here are your watermelon smoothie");
         }
-        public void MakeWatermelonSmoothie2()
+        public void MakeOrangeSmoothie()
         {
             Console.WriteLine("Start Make Watermelon Smoothie");
             cleanser.Clean(true, 400);

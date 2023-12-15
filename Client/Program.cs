@@ -13,6 +13,9 @@ namespace Client
         {
             DrinkMachine may = new DrinkMachine();
             may.MakeWatermelonSmoothie1();
+            Console.WriteLine(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+            may.MakeOrangeJuice();
+            Console.ReadKey();
         }
     }
 }

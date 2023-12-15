@@ -32,7 +32,7 @@ namespace DrinkMachineLibrary
                     //int right = Right = 2;
                     for (int i = 50; i <= 100; i += 50)
                     {
-                        Console.WriteLine("Blender is blending" + i + "%");
+                        Console.WriteLine("Blender is blending " + i + "%");
 
                         Console.WriteLine("Turn left");
                         Console.WriteLine("Turn right");
@@ -42,7 +42,7 @@ namespace DrinkMachineLibrary
                 case 2://watermelon
                     for (int i = 0; i <= 100; i += 25)
                     {
-                        Console.WriteLine("Blender is blending" + i + "%");
+                        Console.WriteLine("Blender is blending " + i + "%");
                         Console.WriteLine("Turn left");
                         Console.WriteLine("Turn right");
                     }

@@ -28,14 +28,14 @@ namespace DrinkMachineLibrary
                 case 1:
                     for (int i = 0; i <= 100; i += 50)
                     {
-                        Console.WriteLine("Cutter is cutting" + i + "%");
+                        Console.WriteLine("Cutter is cutting " + i + "%");
                     }
                     Console.WriteLine("Cutted orange 2 piece");
                     break;
                 case 2:
                     for (int i = 0; i <= 100; i += 20)
                     {
-                        Console.WriteLine("Cutter is cutting" + i + "%");
+                        Console.WriteLine("Cutter is cutting " + i + "%");
                     }
                     Console.WriteLine("Cutted apple 5 piece");
                     break;

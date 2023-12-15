@@ -26,23 +26,23 @@ namespace DrinkMachineLibrary
                 case 1:
                     for (int i = 0; i <= 100; i += 20)
                     {
-                        Console.WriteLine("Filter is filting" + i + "%");
+                        Console.WriteLine("Filter is filting " + i + "%");
                     }
-                    Console.WriteLine("Filted orange juice" + time + "time");
+                    Console.WriteLine("Filted orange juice " + time + " time");
                     break;
                 case 2:
                     for (int i = 0; i <= 100; i += 20)
                     {
-                        Console.WriteLine("Filter is filting" + i + "%");
+                        Console.WriteLine("Filter is filting " + i + "%");
                     }
-                    Console.WriteLine("Filted watermelon juice" + time + "time");
+                    Console.WriteLine("Filted watermelon juice " + time + " time");
                     break;
             }
         }
         public bool TurnOff()
         {
-            return this.TurnOn = true;
             this.Time = 0;
+            return this.TurnOn = false;
         }
 
     }

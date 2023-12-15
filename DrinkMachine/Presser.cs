@@ -18,7 +18,6 @@ namespace DrinkMachineLibrary
         public bool On()
         {
             return TurnOn = true;
-
         }
         public void Press(int time)
         {
@@ -28,14 +27,14 @@ namespace DrinkMachineLibrary
                 case 1://oranges 
                     for (int i = 100; i <= 100; i++)
                     {
-                        Console.WriteLine("Presser is pressing" + i + "%");
+                        Console.WriteLine("Presser is pressing " + i + "%");
                     }
                     Console.WriteLine("Successfull Press");
                     break;
                 case 2://watermelon
                     for (int i = 0; i <= 100; i += 50)
                     {
-                        Console.WriteLine("Presser is pressing" + i + "%");
+                        Console.WriteLine("Presser is pressing " + i + "%");
                     }
                     Console.WriteLine("Successful Press");
                     break;
@@ -44,8 +43,8 @@ namespace DrinkMachineLibrary
         }
         public bool Off()
         {
+            this.Time = 0;
             return TurnOn = false;
-            Time = 0;
         }
     }
 }

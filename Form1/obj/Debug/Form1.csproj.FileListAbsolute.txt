@@ -1,0 +1,13 @@
+D:\DrinkMachine\DrinkMachine1\Form1\bin\Debug\Form1.exe.config
+D:\DrinkMachine\DrinkMachine1\Form1\bin\Debug\Form1.exe
+D:\DrinkMachine\DrinkMachine1\Form1\bin\Debug\Form1.pdb
+D:\DrinkMachine\DrinkMachine1\Form1\obj\Debug\Form1.csproj.AssemblyReference.cache
+D:\DrinkMachine\DrinkMachine1\Form1\obj\Debug\Form1.Form1.resources
+D:\DrinkMachine\DrinkMachine1\Form1\obj\Debug\Form1.Properties.Resources.resources
+D:\DrinkMachine\DrinkMachine1\Form1\obj\Debug\Form1.csproj.GenerateResource.cache
+D:\DrinkMachine\DrinkMachine1\Form1\obj\Debug\Form1.csproj.CoreCompileInputs.cache
+D:\DrinkMachine\DrinkMachine1\Form1\obj\Debug\Form1.exe
+D:\DrinkMachine\DrinkMachine1\Form1\obj\Debug\Form1.pdb
+D:\DrinkMachine\DrinkMachine1\Form1\bin\Debug\DrinkMachine.dll
+D:\DrinkMachine\DrinkMachine1\Form1\bin\Debug\DrinkMachine.pdb
+D:\DrinkMachine\DrinkMachine1\Form1\obj\Debug\Form1.csproj.CopyComplete
