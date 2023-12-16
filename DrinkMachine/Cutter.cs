@@ -32,7 +32,7 @@ namespace DrinkMachineLibrary
                     //    Console.WriteLine("Cutter is cutting" + i + "%");
                     //}
                     //Console.WriteLine("Cutted orange 2 piece");
-                    time += 50;
+                    time += 15;
                     if (time >= 100) time = 100;
                     break;
                 case 2://Watermelon
@@ -50,11 +50,15 @@ namespace DrinkMachineLibrary
                     //    Console.WriteLine("Cutter is cutting" + i + "%");
                     //}
                     //Console.WriteLine("Cutted Watermelon 4 piece");
-                    time += 25;
-                    if (time >= 100) time = 100; 
+                    time += 10;
+                    if (time >= 100) time = 100;
+                    //for (time=0;time<=100; time+=25)
+
+
                     break;
             }
             return time;
+
         }
         public void Off() { this.TurnOn = false; }
     }

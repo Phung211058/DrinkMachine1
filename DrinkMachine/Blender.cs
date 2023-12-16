@@ -39,7 +39,7 @@ namespace DrinkMachineLibrary
                     //    Console.WriteLine("Turn left => Turnright");
                     //}
                     //Console.WriteLine("Successful Blend Orange");
-                    time += 50;
+                    time += 15;
                     if (time >= 100) time = 100;
                     break;
                 case 2://watermelon
@@ -49,7 +49,7 @@ namespace DrinkMachineLibrary
                     //    Console.WriteLine("Turn left => Turnright");
                     //}
                     //Console.WriteLine("Successful Blend Watermelon");
-                    time += 25;
+                    time += 10;
                     if (time >= 100) time = 100;
 
                     break;

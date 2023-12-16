@@ -31,7 +31,7 @@ namespace DrinkMachineLibrary
                        //        Console.WriteLine("Filter is filting" + i + "%");
                        //    }
                        //    Console.WriteLine("Filted orange juice" + time + "time");
-                    timer += 50;
+                    timer += 15;
                     if (timer >= 100) timer = 100;
 
                     break;
@@ -41,7 +41,7 @@ namespace DrinkMachineLibrary
                     //    Console.WriteLine("Filter is filting" + i + "%");
                     //}
                     //Console.WriteLine("Filted watermelon juice" + time + "time");
-                    timer += 25;
+                    timer += 10;
                     if (timer >= 100) timer = 100;
 
                     break;

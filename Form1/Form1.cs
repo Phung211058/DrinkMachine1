@@ -50,7 +50,7 @@ namespace Form1
             int sum = 0;
             for (int i = 0; i <= 10; i++)
             {
-                Thread.Sleep(80);
+                Thread.Sleep(160);
                 if (rad_water.Checked && rad_smoothie.Checked)
                 {
                     sum = cleanser.Clean(true, 400);
@@ -151,18 +151,43 @@ namespace Form1
 
         private void btn_ok_Click_1(object sender, EventArgs e)
         {
-            if (!rad_water.Checked && !rad_orange.Checked && !rad_mango.Checked) 
-            {
-                if(!rad_juice.Checked && !rad_smoothie.Checked)
+            if ((!rad_water.Checked && !rad_orange.Checked && !rad_mango.Checked) 
+                &&(!rad_juice.Checked && !rad_smoothie.Checked))
                 {
                     lbl_announce.ForeColor = Color.Red;
                     lbl_announce.Text = "Please choose your option!";
 
                 }
-            }
-            else if ((rad_water.Checked || rad_orange.Checked || rad_mango.Checked) && (rad_juice.Checked || rad_smoothie.Checked))
+            
+            else if ((rad_water.Checked || rad_orange.Checked || rad_mango.Checked)&&(!rad_juice.Checked && !rad_smoothie.Checked)
+               ) {
+                    lbl_announce.ForeColor = Color.Red;
+                    lbl_announce.Text = "Please choose your type of drink!";
+
+                }
+
+            else if ((!rad_water.Checked && !rad_orange.Checked && !rad_mango.Checked)
+                && (rad_juice.Checked || rad_smoothie.Checked)
+            )
+                {
+                    lbl_announce.ForeColor = Color.Red;
+                    lbl_announce.Text = "Please choose your fruit!";
+
+                }
+            else if ((rad_water.Checked || rad_orange.Checked || rad_mango.Checked) 
+                && (rad_juice.Checked || rad_smoothie.Checked))
             //else
             {
+                pgress_cutter.Value = 0;
+                pgress_blender.Value = 0;
+                pgress_cleanser.Value = 0;
+                pgress_presser.Value = 0;
+                pgress_filter.Value = 0;
+                lbl_percent_blender.Text = null;
+                lbl_percent_cutter.Text = null;
+                lbl_percent_cleanser.Text = null;
+                lbl_percent_presser.Text = null;
+                lbl_percent_filter.Text = null;
                 lbl_announce.ForeColor = Color.Blue;
                 lbl_announce.Text = "Wait a few minutes, please!";
                 DrinkMachine may = new DrinkMachine();
@@ -197,7 +222,20 @@ namespace Form1
                     may.MakeOrangeJuice();
                     backgroundWorker1.RunWorkerAsync();
                 }
+
             }
+        }
+        private void ResetBackgroundWorkers()
+        {
+            // Add more BackgroundWorker instances if needed
+            if (backgroundWorker1.IsBusy)
+            {
+                backgroundWorker1.CancelAsync();
+                backgroundWorker1.Dispose();
+                backgroundWorker1 = new BackgroundWorker();
+            }
+
+            // Repeat the process for other BackgroundWorker instances if needed
         }
 
         private void backgroundWorker2_DoWork(object sender, DoWorkEventArgs e)
@@ -205,7 +243,7 @@ namespace Form1
             int sum = 0;
             for (int i = 0; i <= 10; i++)
             {
-                Thread.Sleep(80);
+                Thread.Sleep(160);
 
                 if (rad_water.Checked && rad_smoothie.Checked)
                 {
@@ -306,7 +344,7 @@ namespace Form1
             int sum = 0;
             for (int i = 0; i <= 10; i++)
             {
-                Thread.Sleep(80);
+                Thread.Sleep(160);
 
                 if (rad_water.Checked && rad_smoothie.Checked)
                 {
@@ -374,9 +412,8 @@ namespace Form1
             int sum = 0;
             for (int i = 0; i <= 10; i++)
             {
-                Thread.Sleep(80);
+                Thread.Sleep(160);
 
-               
                 if (rad_water.Checked && rad_juice.Checked)
                 {
                     sum = presser.Press(2);
@@ -443,7 +480,7 @@ namespace Form1
             int sum = 0;
             for (int i = 0; i <= 10; i++)
             {
-                    Thread.Sleep(80);
+                Thread.Sleep(160);
 
                 if (rad_water.Checked && rad_juice.Checked)
                 {
@@ -532,6 +569,21 @@ namespace Form1
         }
 
         private void rad_water_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }
