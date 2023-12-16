@@ -11,6 +11,7 @@ namespace DrinkMachineLibrary
     {
         private bool turnOn;
         private int Water;
+        private int time = 0;
         public Cleanser()
         {
             turnOn = false;
@@ -18,20 +19,23 @@ namespace DrinkMachineLibrary
         }
         public bool On()
         {
-            this.turnOn = true;
+            turnOn = true;
             return turnOn;
         }
-        public void Clean(bool turnon, int water)
+        public int Clean(bool turnon, int water)
         {
-            this.turnOn = turnon;
-           this.Water = water;
-            Console.WriteLine("Fruit is being soaked in "+water+" ml water");
-            for (int i = 0; i <= 100; i += 50)
-            {
-                Console.WriteLine("Cleanser is cleaning " + i + "%");
-            }
-            Console.WriteLine("Cleaned");
 
+            this.turnOn = turnon;
+            this.Water = water;
+            //Console.WriteLine("Fruit is being soaked in " + water + " ml water");
+            //for (int i = 0; i <= 100; i += 50)
+            //{
+            //    Console.WriteLine("Cleanser is cleaning" + i + " %");
+            //}
+            //Console.WriteLine("Cleaned");
+            time += 50;
+            if (time >= 100) time = 100;
+            return time;
         }
         public bool Off()
         {

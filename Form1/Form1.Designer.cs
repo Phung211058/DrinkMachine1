@@ -98,6 +98,7 @@
             this.rad_water.TabIndex = 0;
             this.rad_water.Text = "WaterLemon";
             this.rad_water.UseVisualStyleBackColor = true;
+            this.rad_water.CheckedChanged += new System.EventHandler(this.rad_water_CheckedChanged);
             // 
             // panel2
             // 
@@ -233,9 +234,9 @@
             // 
             this.lbl_announce.Font = new System.Drawing.Font("Myanmar Text", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_announce.ForeColor = System.Drawing.Color.Goldenrod;
-            this.lbl_announce.Location = new System.Drawing.Point(539, 523);
+            this.lbl_announce.Location = new System.Drawing.Point(505, 523);
             this.lbl_announce.Name = "lbl_announce";
-            this.lbl_announce.Size = new System.Drawing.Size(307, 36);
+            this.lbl_announce.Size = new System.Drawing.Size(396, 36);
             this.lbl_announce.TabIndex = 13;
             this.lbl_announce.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 

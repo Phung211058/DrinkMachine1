@@ -11,6 +11,7 @@ namespace DrinkMachineLibrary
 
         public bool TurnOn;
         public int Material;
+        private int time = 0;
         public Blender()
         {
             TurnOn = false;
@@ -20,9 +21,10 @@ namespace DrinkMachineLibrary
         public bool On()
         {
 
-            return TurnOn = true;
+            TurnOn = true;
+            return TurnOn;
         }
-        public void Puree(int material)
+        public int Puree(int material)
         {
             this.Material = material;
             switch (material)
@@ -30,25 +32,40 @@ namespace DrinkMachineLibrary
                 case 1://oranges
                     //int left = Left = 1;
                     //int right = Right = 2;
-                    for (int i = 50; i <= 100; i += 50)
-                    {
-                        Console.WriteLine("Blender is blending " + i + "%");
+                    //for (int i = 50; i <= 100; i += 50)
+                    //{
+                    //    Console.WriteLine("Blender is blending" + i + "%");
 
-                        Console.WriteLine("Turn left");
-                        Console.WriteLine("Turn right");
-                    }
-                    Console.WriteLine("Successful Blend");
+                    //    Console.WriteLine("Turn left => Turnright");
+                    //}
+                    //Console.WriteLine("Successful Blend Orange");
+                    time += 50;
+                    if (time >= 100) time = 100;
                     break;
                 case 2://watermelon
-                    for (int i = 0; i <= 100; i += 25)
-                    {
-                        Console.WriteLine("Blender is blending " + i + "%");
-                        Console.WriteLine("Turn left");
-                        Console.WriteLine("Turn right");
-                    }
-                    Console.WriteLine("Successful Blend");
+                    //for (int i = 0; i <= 100; i += 25)
+                    //{
+                    //    Console.WriteLine("Blender is blending" + i + "%");
+                    //    Console.WriteLine("Turn left => Turnright");
+                    //}
+                    //Console.WriteLine("Successful Blend Watermelon");
+                    time += 25;
+                    if (time >= 100) time = 100;
+
+                    break;
+                case 3://mango
+                    //for (int i = 0; i <= 100; i += 20)
+                    //{
+                    //    Console.WriteLine("Blender is blending" + i + "%");
+                    //    Console.WriteLine("Turn left => Turnright");
+                    //}
+                    //Console.WriteLine("Successful Blend Mango");
+                    time += 20;
+                    if (time >= 100) time = 100;
+
                     break;
             }
+            return time;
 
 
         }
@@ -64,21 +81,32 @@ namespace DrinkMachineLibrary
                     {
                         Console.WriteLine("Blender is blending" + i + "%");
 
-                        Console.WriteLine("Turn left");
-                        Console.WriteLine("Turn right");
+                        Console.WriteLine("Turn left => Turnright");
                     }
-                    Console.WriteLine("Successful Blend");
+                    Console.WriteLine("Successful Minced Orange");
                     break;
                 case 2://watermelon
                     for (int i = 0; i <= 100; i += 50)
                     {
                         Console.WriteLine("Blender is blending" + i + "%");
-                        Console.WriteLine("Turn left");
-                        Console.WriteLine("Turn right");
+                        Console.WriteLine("Turn left => Turnright");
                     }
-                    Console.WriteLine("Successful Blend");
+                    Console.WriteLine("Successful Minced Orange");
+                    break;
+                case 3://Mango
+                    for (int i = 0; i <= 100; i += 25)
+                    {
+                        Console.WriteLine("Blender is blending" + i + "%");
+                        Console.WriteLine("Turn left => Turnright");
+                    }
+                    Console.WriteLine("Successful Minced Orange");
                     break;
             }
+        }
+        public bool Off()
+        {
+            TurnOn = false;
+            return TurnOn;
         }
     }
 }
