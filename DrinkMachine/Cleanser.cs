@@ -33,7 +33,7 @@ namespace DrinkMachineLibrary
             //    Console.WriteLine("Cleanser is cleaning" + i + " %");
             //}
             //Console.WriteLine("Cleaned");
-            time += 12;
+            time += 6;
             if (time >= 100) time = 100;
             return time;
         }

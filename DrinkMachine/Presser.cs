@@ -33,7 +33,7 @@ namespace DrinkMachineLibrary
                     //    Console.WriteLine("Presser is pressing" + i + "%");
                     //}
                     //Console.WriteLine("Successfull Press Orange");
-                    timer += 15;
+                    timer += 5;
                     if (timer >= 100) timer = 100;
 
                     break;
@@ -43,7 +43,7 @@ namespace DrinkMachineLibrary
                     //    Console.WriteLine("Presser is pressing" + i + "%");
                     //}
                     //Console.WriteLine("Successful Press Watermelon");
-                    timer += 10;
+                    timer += 8;
                     if (timer >= 100) timer = 100;
                     break;
                 case 3://mango
@@ -52,7 +52,7 @@ namespace DrinkMachineLibrary
                     //    Console.WriteLine("Presser is pressing" + i + "%");
                     //}
                     //Console.WriteLine("Successful Press Mango");
-                    timer += 20;
+                    timer += 12;
                     if (timer >= 100) timer = 100;
                     break;
             }
