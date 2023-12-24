@@ -26,36 +26,23 @@ namespace DrinkMachineLibrary
             switch (time)
             {
                 case 1://oranges
-                       //    for (int i = 0; i <= 100; i += 50)
-                       //    {
-                       //        Console.WriteLine("Filter is filting" + i + "%");
-                       //    }
-                       //    Console.WriteLine("Filted orange juice" + time + "time");
                     timer += 5;
                     if (timer >= 100) timer = 100;
-
                     break;
                 case 2://watermelon
-                    //for (int i = 0; i <= 100; i += 25)
-                    //{
-                    //    Console.WriteLine("Filter is filting" + i + "%");
-                    //}
-                    //Console.WriteLine("Filted watermelon juice" + time + "time");
                     timer += 8;
                     if (timer >= 100) timer = 100;
-
                     break;
                 case 3://mango
-                    //for (int i = 0; i <= 100; i += 20)
-                    //{
-                    //    Console.WriteLine("Filter is filting" + i + "%");
-                    //}
-                    //Console.WriteLine("Filted watermelon juice" + time + "time");
                     timer += 12;
                     if (timer >= 100) timer = 100;
                     break;
             }
             return timer;
+        }
+        public void returnTimer()
+        {
+            timer = 0;
         }
         public bool TurnOff()
         {
@@ -63,6 +50,5 @@ namespace DrinkMachineLibrary
             Time = 0;
             return TurnOn;
         }
-
     }
 }

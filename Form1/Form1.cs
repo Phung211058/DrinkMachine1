@@ -48,9 +48,10 @@ namespace Form1
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
             int sum = 0;
+            cleanser.returnTimer();
             for (int i = 0; i <= 20; i++)
             {
-                Thread.Sleep(120);
+                Thread.Sleep(100);
                 if (rad_water.Checked && rad_smoothie.Checked)
                 {
                     sum = cleanser.Clean(true, 400);
@@ -147,9 +148,9 @@ namespace Form1
                 backgroundWorker2.RunWorkerAsync();
             }
         }
-
         private void btn_ok_Click_1(object sender, EventArgs e)
         {
+
             if ((!rad_water.Checked && !rad_orange.Checked && !rad_mango.Checked) &&(!rad_juice.Checked && !rad_smoothie.Checked))
                 {
                     lbl_announce.ForeColor = Color.Red;
@@ -177,6 +178,11 @@ namespace Form1
                 }
                 else
                 {
+                    rad_juice.Enabled = false;
+                    rad_mango.Enabled = false;
+                    rad_smoothie.Enabled = false;
+                    rad_orange.Enabled = false;
+                    rad_water.Enabled = false;
                     pgress_cutter.Value = 0;
                     pgress_blender.Value = 0;
                     pgress_cleanser.Value = 0;
@@ -221,16 +227,16 @@ namespace Form1
                         backgroundWorker1.RunWorkerAsync();
                     }
                 }
-         
             }
         }
 
         private void backgroundWorker2_DoWork(object sender, DoWorkEventArgs e)
         {
             int sum = 0;
+            cutter.returnTimer();
             for (int i = 0; i <= 20; i++)
             {
-                Thread.Sleep(120);
+                Thread.Sleep(100);
 
                 if (rad_water.Checked && rad_smoothie.Checked)
                 {
@@ -329,9 +335,10 @@ namespace Form1
         private void backgroundWorker3_DoWork(object sender, DoWorkEventArgs e)
         {
             int sum = 0;
+            blender.returnTimer();
             for (int i = 0; i <= 20; i++)
             {
-                Thread.Sleep(120);
+                Thread.Sleep(100);
 
                 if (rad_water.Checked && rad_smoothie.Checked)
                 {
@@ -397,9 +404,10 @@ namespace Form1
         private void backgroundWorker4_DoWork(object sender, DoWorkEventArgs e)
         {
             int sum = 0;
+            presser.returnTimer();
             for (int i = 0; i <= 20; i++)
             {
-                Thread.Sleep(120);
+                Thread.Sleep(100);
 
                 if (rad_water.Checked && rad_juice.Checked)
                 {
@@ -465,9 +473,10 @@ namespace Form1
         private void backgroundWorker5_DoWork(object sender, DoWorkEventArgs e)
         {
             int sum = 0;
+            filter.returnTimer();
             for (int i = 0; i <= 20; i++)
             {
-                Thread.Sleep(120);
+                Thread.Sleep(100);
 
                 if (rad_water.Checked && rad_juice.Checked)
                 {
@@ -551,8 +560,18 @@ namespace Form1
                 {
                     lbl_announce.Text = "Mango smoothie successfully";
                 }
-
+                rad_juice.Enabled = true;
+                rad_mango.Enabled = true;
+                rad_smoothie.Enabled = true;
+                rad_orange.Enabled = true;
+                rad_water.Enabled = true;
+                rad_juice.Checked = false;
+                rad_mango.Checked = false;
+                rad_smoothie.Checked = false;
+                rad_orange.Checked = false;
+                rad_water.Checked = false;
             }
+
         }
 
         private void rad_water_CheckedChanged(object sender, EventArgs e)
